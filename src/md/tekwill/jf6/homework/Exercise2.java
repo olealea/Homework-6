@@ -46,6 +46,14 @@ public class Exercise2 {
         /*
         Print the winner's name and age. More points the better.
         * */
-        // Write your code here
+        String name = players[0].name;
+        int winner = players[0].points;
+        for (int i = 0; i < 5; i++) {
+            if (players[i].points > winner) {
+                winner = players[i].points;
+                name = players[i].name;
+            }
+
+        } System.out.println("The winner " + name + " has " + winner + " points");
     }
 }

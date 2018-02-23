@@ -1,5 +1,7 @@
 package md.tekwill.jf6.homework;
 
+import com.sun.org.apache.xpath.internal.SourceTree;
+
 public class Exercise3 {
 
     static class Player {
@@ -46,6 +48,15 @@ public class Exercise3 {
         /*
         Print the average age of the players.
         * */
-        // Write your code here
+        double average = 0.0;
+        double sum = 0.0;
+        int count = 0;
+        for (int i = 0; i < players.length; i++){
+            sum += players[i].age;
+            count = ++count;
+            average = sum / count;
+        }
+        System.out.println(average);
+
     }
 }

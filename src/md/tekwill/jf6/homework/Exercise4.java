@@ -46,6 +46,10 @@ public class Exercise4 {
         /*
         Print the sum of all player's points
         * */
-        // Write your code here
+        int sum = 0;
+        for (int i = 0; i < players.length; i++){
+            sum += players[i].points;
+        }
+        System.out.println("Sum of points is " + sum);
     }
 }
